@@ -77,15 +77,15 @@ Por padrão, ambos imprimem no terminal, e é isto o que acontece quando substit
 
 Entretanto, ao utilizar a saida sys.stdout, o texto será armazenado como uma saída, já em sys.stderr será armazenado como erro
 
-Desta forma, é importante manter as mensagens de erro em sys.stderr e as mensagens de output em sys.stdout porque é possível redirecionar estas saídas para outro arquivo com base no tipo de saída que é. 
+Desta forma, é importante manter as mensagens de erro em sys.stderr e as mensagens de output em sys.stdout, como é possível redirecionar estas saídas para outro arquivo com base no tipo de saída que é. 
 
-Por exemplo seria possível criar um arquivo log_erros.txt que salva apenas as saídas de stderr de um programa com o seguinte comando
+Por exemplo, seria possível criar um arquivo erros.txt que salva apenas as saídas de stderr de um programa com o seguinte comando
 
-`./exemplo_5 2> log_erros.txt`
+`./exemplo_5 2> erros.txt`
 
-Desta mesma forma, seria possível criar um arquivo log_outputs.txt que salva apenas as saídas de stdout de um programa com o seguinte comando
+E desta mesma forma é possível criar um arquivo outputs.txt que salva apenas as saídas de stdout de um programa com o seguinte comando
 
-`./exemplo_5 1> log_outputs.txt`
+`./exemplo_5 1> outputs.txt`
 
-Os comandos `1>` e `2>` respectivamente salvam as linhas stdout e stderr para um arquivo a sua escolha, este arquivo por até mesmo ser um sys.stdout por exemplo, isso é utilizado para transformar os erros de um programa em output, para assim salvar todas as mensagens em apenas um lugar.
+Os comandos `1>` e `2>` respectivamente salvam as linhas de sys.stdout e sys.stderr para um arquivo a sua escolha, este arquivo por até mesmo ser um sys.stdout por exemplo, isso pode ser utilizado para transformar os erros de um programa em output, para assim salvar todas as mensagens em apenas um lugar.
 
