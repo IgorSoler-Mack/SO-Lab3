@@ -7,7 +7,7 @@ int main (int argc, char *argv[]) {
 	int i, n;
 	
 	if (argc != 2){ 
-		fprintf(stdout, "Usage: %s processes\n", argv[0]);
+		fprintf(stderr, "Usage: %s processes\n", argv[0]);
 		return 1;
 	}
 	n = atoi(argv[1]); 
