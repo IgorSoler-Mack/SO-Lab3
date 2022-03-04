@@ -14,7 +14,7 @@ Compile e Execute o arquivo main.c em seu compilador de escolha (GCC foi o Utili
 
 Possíveis comandos para compilar o programa
 
-`make main.c`
+`make main`
 
 `gcc .\main.c`
 
